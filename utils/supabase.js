@@ -112,7 +112,3 @@ window.waitForSupabase = function() {
         window.dispatchEvent(new Event('supabaseFallback'));
     }
 })();
-  document.addEventListener('DOMContentLoaded', initializeSupabase);
-} else {
-  initializeSupabase();
-}
