@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уход за изделиями - MOLOVE</title>
+    <meta name="description" content="Рекомендации по уходу за одеждой MOLOVE">
+    <meta name="keywords" content="уход за одеждой, стирка, MOLOVE">
+    <meta property="og:title" content="Уход за изделиями - MOLOVE">
+    <meta property="og:description" content="Узнайте как правильно ухаживать за изделиями MOLOVE">
+    <meta name="twitter:title" content="Уход за изделиями - MOLOVE">
+    <meta name="twitter:description" content="Рекомендации по уходу">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1583NQ9T9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1583NQ9T9X');
+    </script>
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f5f5f5;
+            --accent-color: #666666;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-none transition-all duration-300 hover:bg-[var(--accent-color)];
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/ScrollToTop.js"></script>
+    <script type="text/babel" src="care-app.js"></script>
+</body>
+</html>

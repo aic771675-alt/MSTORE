@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - MOLOVE</title>
+    <meta name="description" content="Административная панель MOLOVE для управления товарами">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f5f5f5;
+            --accent-color: #666666;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --admin-bg: #fafafa;
+            --admin-sidebar: #1a1a1a;
+        }
+    }
+    @layer base {
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+            background: var(--admin-bg);
+        }
+    }
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg transition-all duration-300 hover:bg-[var(--accent-color)] shadow-sm hover:shadow-md;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md;
+        }
+    }
+    </style>
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('adminAuth') !== 'true' || !sessionStorage.getItem('adminToken')) {
+            sessionStorage.clear();
+            window.location.href = 'admin-login.html';
+        }
+    </script>
+    <div id="root"></div>
+    <script type="text/babel" src="utils/supabase.js"></script>
+    <script type="text/babel" src="utils/imageOptimizer.js"></script>
+    <script type="text/babel" src="components/AdminHeader.js"></script>
+    <script type="text/babel" src="components/ProductForm.js"></script>
+    <script type="text/babel" src="components/ProductList.js"></script>
+    <script type="text/babel" src="admin-app.js"></script>
+</body>
+</html>

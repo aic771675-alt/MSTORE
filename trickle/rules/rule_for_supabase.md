@@ -1,0 +1,11 @@
+When working with MOLOVE database
+- Always use Supabase as primary database
+- Use localStorage as backup/cache only
+- All CRUD operations go through window.supabaseClient
+- Products table: name, article, category, price, images[], description, sizes (JSONB), published
+- Orders table: order_number, customer info, items (JSONB), total_amount, status
+- Check Supabase connection before operations
+- Fallback to localStorage if Supabase unavailable
+- Use RLS policies for security (public read published, admin write all)
+- Always handle errors gracefully with user-friendly messages
+- Cache frequently accessed data in memory

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0, user-scalable=yes">
+    <title>MOLOVE - Каталог Одежды</title>
+    <meta name="description" content="Интеллектуальный каталог одежды MOLOVE с удобным интерфейсом и быстрым оформлением заказа">
+    <meta name="keywords" content="одежда, MOLOVE, каталог одежды, интернет-магазин">
+    <meta property="og:title" content="MOLOVE - Каталог Одежды">
+    <meta property="og:description" content="Стильная одежда с удобным каталогом">
+    <meta name="twitter:title" content="MOLOVE - Каталог Одежды">
+    <meta name="twitter:description" content="Стильная одежда с удобным каталогом">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1583NQ9T9X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1583NQ9T9X');
+    </script>
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Supabase Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <style type="text/tailwindcss">
+    @layer base {
+        body.loading {
+            overflow: hidden;
+            height: 100vh;
+        }
+    }
+    
+    @layer theme {
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #f5f5f5;
+            --accent-color: #666666;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --spacing: clamp(0.75rem, 1.5vw, 1.5rem);
+            --header-height: 56px;
+            --font-base: clamp(0.875rem, 1vw, 1rem);
+            --font-lg: clamp(1rem, 1.25vw, 1.125rem);
+            --font-xl: clamp(1.125rem, 1.5vw, 1.25rem);
+        }
+        
+        @media (min-width: 768px) {
+            :root {
+                --header-height: 72px;
+            }
+        }
+    }
+
+    @layer base {
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+        
+        * {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        @media (min-width: 640px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.25rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+        }
+    }
+
+    @layer utilities {
+        @keyframes rotate-circle {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+                opacity: 0.6;
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 0.3;
+            }
+        }
+        
+        @keyframes progress-load {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        @keyframes fade-text {
+            0%, 100% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes scale-logo {
+            0% {
+                transform: scale(0.97);
+                opacity: 0.85;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.97);
+                opacity: 0.85;
+            }
+        }
+        
+        .loading-circle-outer {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 50%;
+            animation: rotate-circle 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        
+        .loading-circle-middle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            border-radius: 50%;
+            animation: rotate-circle 3s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+        }
+        
+        .loading-circle-inner {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border: 2px solid rgba(255, 255, 255, 0.45);
+            border-radius: 50%;
+            animation: rotate-circle 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        
+        @media (max-width: 640px) {
+            .loading-circle-outer {
+                width: 220px;
+                height: 220px;
+                border-width: 1.5px;
+            }
+            
+            .loading-circle-middle {
+                width: 160px;
+                height: 160px;
+                border-width: 1.5px;
+            }
+            
+            .loading-circle-inner {
+                width: 100px;
+                height: 100px;
+                border-width: 1.5px;
+            }
+        }
+        
+        .loading-progress {
+            animation: progress-load 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        .loading-text {
+            animation: fade-text 1.5s ease-in-out infinite;
+        }
+        
+        .loading-logo-container {
+            animation: scale-logo 2s ease-in-out infinite;
+        }
+        
+        @media (max-width: 640px) {
+            .loading-logo-container h1 {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+        }
+        
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes pulse-badge {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+        
+        .animate-pulse-badge {
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+        
+        @keyframes slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-slide-up {
+            animation: slide-up 0.3s ease-out forwards;
+        }
+    }
+    
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white rounded-none transition-all duration-300 hover:bg-[var(--accent-color)] tracking-wider uppercase;
+            padding: clamp(0.625rem, 1.5vw, 0.875rem) clamp(1.25rem, 3vw, 1.75rem);
+            font-size: clamp(0.75rem, 1vw, 0.875rem);
+            letter-spacing: 0.1em;
+        }
+        
+        .btn-secondary {
+            @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-none transition-all duration-300 hover:bg-[var(--primary-color)] hover:text-white tracking-wider uppercase;
+            padding: clamp(0.625rem, 1.5vw, 0.875rem) clamp(1.25rem, 3vw, 1.75rem);
+            font-size: clamp(0.75rem, 1vw, 0.875rem);
+            letter-spacing: 0.1em;
+        }
+        
+
+        .swiper-container {
+            touch-action: pan-x pan-y;
+        }
+        
+        .sticky-buy-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 40;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            animation: slide-up 0.3s ease-out;
+            padding: env(safe-area-inset-bottom, 0);
+        }
+        
+        @media (min-width: 768px) {
+            .product-detail-thumbnail {
+                width: 115px !important;
+                height: 115px !important;
+                min-width: 115px !important;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .product-detail-thumbnail {
+                width: 130px !important;
+                height: 130px !important;
+                min-width: 130px !important;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .swiper.product-swiper {
+                height: clamp(350px, 45vh, 500px) !important;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .swiper.product-swiper {
+                height: clamp(450px, 45vh, 500px) !important;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .swiper.product-swiper {
+                height: clamp(450px, 45vh, 550px) !important;
+            }
+        }
+    }
+    </style>
+</head>
+<body class="loading">
+    <div id="loading-screen" class="fixed inset-0 bg-black z-[9999] flex items-center justify-center transition-opacity duration-1000">
+        <div class="text-center px-4 relative">
+            <!-- Animated circles -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="loading-circle-outer"></div>
+                <div class="loading-circle-middle"></div>
+                <div class="loading-circle-inner"></div>
+            </div>
+            
+            <!-- Logo -->
+            <div class="relative z-10">
+                <div class="loading-logo-container mb-8">
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-[0.4em] sm:tracking-[0.5em] md:tracking-[0.6em] text-white" style="font-family: 'Cormorant Garamond', serif;">
+                        MOLOVE
+                    </h1>
+                </div>
+                
+                <!-- Progress bar -->
+                <div class="w-48 sm:w-64 h-0.5 bg-white bg-opacity-30 mx-auto mb-6 overflow-hidden rounded-full">
+                    <div class="loading-progress h-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
+                </div>
+                
+                <!-- Loading text -->
+                <p class="text-xs sm:text-sm text-white text-opacity-80 tracking-[0.3em] uppercase loading-text font-light">
+                    Загрузка
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="root"></div>
+    <!-- Load Supabase initialization FIRST -->
+    <script type="text/babel" src="utils/supabase.js"></script>
+    <!-- Wait for Supabase to initialize -->
+    <script>
+        // Ensure Supabase is loaded before proceeding
+        window.addEventListener('supabaseReady', function() {
+            console.log('✅ Supabase initialized successfully');
+        });
+        window.addEventListener('supabaseFallback', function() {
+            console.warn('⚠️ Using localStorage fallback');
+        });
+    </script>
+    <script type="text/babel" src="utils/imageOptimizer.js"></script>
+    <script type="text/babel" src="components/SearchOverlay.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/ScrollToTop.js"></script>
+    <script type="text/babel" src="components/ProductCard.js"></script>
+    <script type="text/babel" src="components/ProductDetail.js"></script>
+    <script type="text/babel" src="components/Cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/babel" src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

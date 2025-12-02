@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Белая рубашка оверсайз",
+    "article": "MOL-TOP-001",
+    "category": "Tops",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&h=1200&fit=crop",
+    "description": "Классическая белая рубашка оверсайз из натурального хлопка премиум-качества. Свободный крой обеспечивает максимальный комфорт и универсальность образа."
+  },
+  {
+    "name": "Чёрные брюки прямого кроя",
+    "article": "MOL-BTM-002",
+    "category": "Bottoms",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&h=1200&fit=crop",
+    "description": "Элегантные брюки прямого кроя из качественной ткани с эластаном. Высокая посадка визуально удлиняет силуэт."
+  },
+  {
+    "name": "Платье миди чёрное",
+    "article": "MOL-DRS-003",
+    "category": "Dresses",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1200&fit=crop",
+    "description": "Лаконичное чёрное платье миди из качественного трикотажа. Подходит для любого случая."
+  },
+  {
+    "name": "Бежевый тренч классический",
+    "article": "MOL-OUT-004",
+    "category": "Outerwear",
+    "price": 12990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Классический тренч из водоотталкивающей ткани. Идеальная верхняя одежда для межсезонья."
+  },
+  {
+    "name": "Водолазка базовая чёрная",
+    "article": "MOL-TOP-005",
+    "category": "Tops",
+    "price": 3490,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Базовая водолазка из мягкого трикотажа с эластаном. Незаменимая вещь для базового гардероба."
+  },
+  {
+    "name": "Джинсы прямые синие",
+    "article": "MOL-BTM-006",
+    "category": "Bottoms",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=1200&fit=crop",
+    "description": "Классические джинсы прямого кроя из японского денима. Идеальны для создания casual образов."
+  },
+  {
+    "name": "Платье-рубашка белое",
+    "article": "MOL-DRS-007",
+    "category": "Dresses",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=800&h=1200&fit=crop",
+    "description": "Свободное платье-рубашка из хлопка с функциональными карманами. Идеально для летних прогулок."
+  },
+  {
+    "name": "Пальто кашемировое серое",
+    "article": "MOL-OUT-008",
+    "category": "Outerwear",
+    "price": 15990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Элегантное пальто из натурального кашемира. Инвестиция на долгие годы."
+  },
+  {
+    "name": "Блуза шёлковая молочная",
+    "article": "MOL-TOP-009",
+    "category": "Tops",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1624206112918-273ad5b5f165?w=800&h=1200&fit=crop",
+    "description": "Роскошная блуза из натурального шёлка. Идеальна для деловых встреч и мероприятий."
+  },
+  {
+    "name": "Юбка-карандаш чёрная",
+    "article": "MOL-BTM-010",
+    "category": "Bottoms",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Классическая юбка-карандаш из костюмной ткани. Незаменима для делового гардероба."
+  },
+  {
+    "name": "Платье макси бежевое",
+    "article": "MOL-DRS-011",
+    "category": "Dresses",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Струящееся платье макси из вискозы. Идеально для торжественных мероприятий."
+  },
+  {
+    "name": "Куртка кожаная чёрная",
+    "article": "MOL-OUT-012",
+    "category": "Outerwear",
+    "price": 18990,
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1200&fit=crop",
+    "description": "Байкерская куртка из натуральной кожи. Вневременной must-have гардероба."
+  },
+  {
+    "name": "Свитер кашемировый бежевый",
+    "article": "MOL-TOP-013",
+    "category": "Tops",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&h=1200&fit=crop",
+    "description": "Мягкий свитер из натурального кашемира. Создаёт образ элегантной непринуждённости."
+  },
+  {
+    "name": "Широкие брюки бежевые",
+    "article": "MOL-BTM-014",
+    "category": "Bottoms",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Трендовые брюки с широкими штанинами из льна. Идеальны для современных образов."
+  },
+  {
+    "name": "Платье с запахом зелёное",
+    "article": "MOL-DRS-015",
+    "category": "Dresses",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1200&fit=crop",
+    "description": "Женственное платье с запахом из плотного трикотажа. Универсальная модель для разных фигур."
+  },
+  {
+    "name": "Пуховик удлинённый чёрный",
+    "article": "MOL-OUT-016",
+    "category": "Outerwear",
+    "price": 16990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Тёплый пуховик с натуральным наполнителем. Защита от мороза с элегантным дизайном."
+  },
+  {
+    "name": "Топ кроп белый",
+    "article": "MOL-TOP-017",
+    "category": "Tops",
+    "price": 2990,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Укороченный топ из органического хлопка. Базовая вещь для летнего гардероба."
+  },
+  {
+    "name": "Кюлоты льняные серые",
+    "article": "MOL-BTM-018",
+    "category": "Bottoms",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1560072810-1cffb09faf0f?w=800&h=1200&fit=crop",
+    "description": "Стильные кюлоты из натурального льна. Высокая посадка визуально удлиняет ноги."
+  },
+  {
+    "name": "Платье вязаное серое",
+    "article": "MOL-DRS-019",
+    "category": "Dresses",
+    "price": 8490,
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1200&fit=crop",
+    "description": "Уютное вязаное платье из мериносовой шерсти. Универсальный оттенок легко комбинируется."
+  },
+  {
+    "name": "Бомбер оливковый",
+    "article": "MOL-OUT-020",
+    "category": "Outerwear",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Классический бомбер из плотного хлопка. Универсальная куртка для межсезонья."
+  },
+  {
+    "name": "Футболка базовая белая",
+    "article": "MOL-TOP-021",
+    "category": "Tops",
+    "price": 1990,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1200&fit=crop",
+    "description": "Классическая футболка из премиального хлопка. Основа любого гардероба."
+  },
+  {
+    "name": "Брюки карго бежевые",
+    "article": "MOL-BTM-022",
+    "category": "Bottoms",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=1200&fit=crop",
+    "description": "Стильные брюки карго с накладными карманами. Сочетание удобства и дизайна."
+  },
+  {
+    "name": "Платье-комбинация шёлковое",
+    "article": "MOL-DRS-023",
+    "category": "Dresses",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Роскошная комбинация из натурального шёлка. Изысканность для особых случаев."
+  },
+  {
+    "name": "Жилет стёганый чёрный",
+    "article": "MOL-OUT-024",
+    "category": "Outerwear",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Лёгкий стёганый жилет с утеплителем. Идеален для многослойных образов."
+  },
+  {
+    "name": "Рубашка оверсайз бежевая",
+    "article": "MOL-TOP-025",
+    "category": "Tops",
+    "price": 4790,
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=1200&fit=crop",
+    "description": "Свободная рубашка из хлопка с льном. Дышащая ткань обеспечивает комфорт."
+  },
+  {
+    "name": "Джинсы скинни синие",
+    "article": "MOL-BTM-026",
+    "category": "Bottoms",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=800&h=1200&fit=crop",
+    "description": "Облегающие джинсы из эластичного денима. Классика современного гардероба."
+  },
+  {
+    "name": "Платье-рубашка серое",
+    "article": "MOL-DRS-027",
+    "category": "Dresses",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=800&h=1200&fit=crop",
+    "description": "Универсальное платье-рубашка длины миди. Подходит для работы и отдыха."
+  },
+  {
+    "name": "Парка хаки",
+    "article": "MOL-OUT-028",
+    "category": "Outerwear",
+    "price": 13990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Удлинённая парка с капюшоном и утеплителем. Практичная защита от непогоды."
+  },
+  {
+    "name": "Джемпер в полоску",
+    "article": "MOL-TOP-029",
+    "category": "Tops",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=1200&fit=crop",
+    "description": "Классический джемпер в бретонскую полоску. Французский шик в повседневном образе."
+  },
+  {
+    "name": "Юбка плиссе металлик",
+    "article": "MOL-BTM-030",
+    "category": "Bottoms",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Эффектная плиссированная юбка с металлическим блеском. Создаёт праздничный образ."
+  },
+  {
+    "name": "Платье бельевого стиля",
+    "article": "MOL-DRS-031",
+    "category": "Dresses",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1200&fit=crop",
+    "description": "Изящное платье из шёлковистой вискозы. Женственность и лёгкость для особых случаев."
+  },
+  {
+    "name": "Пальто шерстяное синее",
+    "article": "MOL-OUT-032",
+    "category": "Outerwear",
+    "price": 17990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Элегантное пальто из шерсти премиум-класса. Статусная вещь для холодного сезона."
+  },
+  {
+    "name": "Блуза с бантом белая",
+    "article": "MOL-TOP-033",
+    "category": "Tops",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1624206112918-273ad5b5f165?w=800&h=1200&fit=crop",
+    "description": "Романтичная блуза с декоративным бантом из шёлка. Идеально для торжественных мероприятий."
+  },
+  {
+    "name": "Брюки клёш чёрные",
+    "article": "MOL-BTM-034",
+    "category": "Bottoms",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Стильные брюки клёш с высокой посадкой в стиле 70-х. Возвращение винтажного стиля."
+  },
+  {
+    "name": "Платье-футляр винное",
+    "article": "MOL-DRS-035",
+    "category": "Dresses",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Классическое платье-футляр благородного оттенка. Для важных встреч и мероприятий."
+  },
+  {
+    "name": "Ветровка белая",
+    "article": "MOL-OUT-036",
+    "category": "Outerwear",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Лёгкая ветровка из водоотталкивающей ткани. Защита от дождя и ветра в межсезонье."
+  },
+  {
+    "name": "Кардиган длинный серый",
+    "article": "MOL-TOP-037",
+    "category": "Tops",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&h=1200&fit=crop",
+    "description": "Удлинённый кардиган из мягкого трикотажа. Универсальный оттенок легко комбинируется."
+  },
+  {
+    "name": "Шорты джинсовые голубые",
+    "article": "MOL-BTM-038",
+    "category": "Bottoms",
+    "price": 3990,
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=1200&fit=crop",
+    "description": "Классические джинсовые шорты с потёртостями. Универсальная вещь для casual образов."
+  },
+  {
+    "name": "Платье с цветочным принтом",
+    "article": "MOL-DRS-039",
+    "category": "Dresses",
+    "price": 8490,
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1200&fit=crop",
+    "description": "Романтичное платье с нежным принтом из вискозы. Идеально для летних прогулок."
+  },
+  {
+    "name": "Плащ двубортный бежевый",
+    "article": "MOL-OUT-040",
+    "category": "Outerwear",
+    "price": 14990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Элегантный плащ с двубортной застёжкой. Вечная классика верхней одежды."
+  },
+  {
+    "name": "Топ с открытыми плечами чёрный",
+    "article": "MOL-TOP-041",
+    "category": "Tops",
+    "price": 3490,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Стильный топ с открытыми плечами из эластичного трикотажа. Идеален для летних вечеров."
+  },
+  {
+    "name": "Брюки-палаццо серые",
+    "article": "MOL-BTM-042",
+    "category": "Bottoms",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Роскошные брюки-палаццо с широкими штанинами. Универсальная модель для вечерних образов."
+  },
+  {
+    "name": "Платье-свитер горчичное",
+    "article": "MOL-DRS-043",
+    "category": "Dresses",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1200&fit=crop",
+    "description": "Уютное платье-свитер из мягкого трикотажа. Идеально для прохладной погоды."
+  },
+  {
+    "name": "Дублёнка укороченная коричневая",
+    "article": "MOL-OUT-044",
+    "category": "Outerwear",
+    "price": 24990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Роскошная укороченная дублёнка из натуральной овчины. Невероятно тёплая и мягкая."
+  },
+  {
+    "name": "Гольф белый базовый",
+    "article": "MOL-TOP-045",
+    "category": "Tops",
+    "price": 2990,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Классический гольф из мягкого трикотажа. Незаменимая вещь для холодного сезона."
+  },
+  {
+    "name": "Юбка миди плиссе чёрная",
+    "article": "MOL-BTM-046",
+    "category": "Bottoms",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Элегантная плиссированная юбка миди. Идеальна для офиса."
+  },
+  {
+    "name": "Платье-халат терракотовое",
+    "article": "MOL-DRS-047",
+    "category": "Dresses",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1200&fit=crop",
+    "description": "Стильное платье-халат с запахом в актуальном оттенке. Универсальная модель."
+  },
+  {
+    "name": "Анорак синий",
+    "article": "MOL-OUT-048",
+    "category": "Outerwear",
+    "price": 11990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Практичный анорак с капюшоном. Защита от непогоды в спортивном стиле."
+  },
+  {
+    "name": "Майка-алкоголичка бежевая",
+    "article": "MOL-TOP-049",
+    "category": "Tops",
+    "price": 1990,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Классическая майка на тонких бретелях. Идеальная база для образов."
+  },
+  {
+    "name": "Брюки с защипами оливковые",
+    "article": "MOL-BTM-050",
+    "category": "Bottoms",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Элегантные брюки с защипами у пояса. Классический крой визуально удлиняет ноги."
+  },
+  {
+    "name": "Платье-комбинезон чёрный",
+    "article": "MOL-DRS-051",
+    "category": "Dresses",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Стильный комбинезон с широкими штанинами. V-образный вырез создаёт женственный силуэт."
+  },
+  {
+    "name": "Пуховик-одеяло графитовый",
+    "article": "MOL-OUT-052",
+    "category": "Outerwear",
+    "price": 19990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Трендовый пуховик оверсайз с объёмной стёжкой. Максимальное тепло для суровых зим."
+  },
+  {
+    "name": "Лонгслив в рубчик белый",
+    "article": "MOL-TOP-053",
+    "category": "Tops",
+    "price": 2990,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Базовый лонгслив из рибаны. Фактурная ткань в рубчик добавляет текстуру."
+  },
+  {
+    "name": "Джинсы бойфренды голубые",
+    "article": "MOL-BTM-054",
+    "category": "Bottoms",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=1200&fit=crop",
+    "description": "Свободные джинсы бойфренды из мягкого денима. Непринуждённый casual образ."
+  },
+  {
+    "name": "Платье-рубашка в полоску",
+    "article": "MOL-DRS-055",
+    "category": "Dresses",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=800&h=1200&fit=crop",
+    "description": "Свежее платье-рубашка в морскую полоску. Классический принт добавляет французского шика."
+  },
+  {
+    "name": "Бомбер стёганый чёрный",
+    "article": "MOL-OUT-056",
+    "category": "Outerwear",
+    "price": 12990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Стильный стёганый бомбер с лёгким утеплителем. Универсальная куртка для межсезонья."
+  },
+  {
+    "name": "Боди кружевное чёрное",
+    "article": "MOL-TOP-057",
+    "category": "Tops",
+    "price": 4490,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Изящное боди с кружевными вставками и застёжкой-крючками. Облегающий крой подчёркивает фигуру."
+  },
+  {
+    "name": "Кюлоты кожаные чёрные",
+    "article": "MOL-BTM-058",
+    "category": "Bottoms",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1560072810-1cffb09faf0f?w=800&h=1200&fit=crop",
+    "description": "Эффектные кюлоты из экокожи с высокой посадкой. Свободный крой создаёт современный силуэт."
+  },
+  {
+    "name": "Платье асимметричное серое",
+    "article": "MOL-DRS-059",
+    "category": "Dresses",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Авангардное платье с асимметричным подолом. Необычный крой для смелых образов."
+  },
+  {
+    "name": "Тренч кожаный чёрный",
+    "article": "MOL-OUT-060",
+    "category": "Outerwear",
+    "price": 29990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Роскошный тренч из натуральной кожи с классической застёжкой. Инвестиция в стиль."
+  },
+  {
+    "name": "Свитшот оверсайз серый",
+    "article": "MOL-TOP-061",
+    "category": "Tops",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Комфортный свитшот оверсайз с начёсом. Свободный крой создаёт расслабленный силуэт."
+  },
+  {
+    "name": "Брюки из экокожи бордовые",
+    "article": "MOL-BTM-062",
+    "category": "Bottoms",
+    "price": 8490,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Стильные брюки из качественной экокожи благородного оттенка. Эффектная альтернатива классике."
+  },
+  {
+    "name": "Сарафан джинсовый синий",
+    "article": "MOL-DRS-063",
+    "category": "Dresses",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=800&h=1200&fit=crop",
+    "description": "Классический джинсовый сарафан с регулируемыми бретелями. Универсальная вещь для образов."
+  },
+  {
+    "name": "Косуха укороченная бежевая",
+    "article": "MOL-OUT-064",
+    "category": "Outerwear",
+    "price": 19990,
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1200&fit=crop",
+    "description": "Стильная укороченная косуха из натуральной кожи нежного оттенка. Смягчённая классика."
+  },
+  {
+    "name": "Топ на одно плечо белый",
+    "article": "MOL-TOP-065",
+    "category": "Tops",
+    "price": 3990,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Асимметричный топ на одно плечо. Оригинальный дизайн привлекает внимание."
+  },
+  {
+    "name": "Юбка-миди кожаная чёрная",
+    "article": "MOL-BTM-066",
+    "category": "Bottoms",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Элегантная юбка-карандаш из экокожи длины миди. Добавляет дерзости образу."
+  },
+  {
+    "name": "Платье-водолазка серое",
+    "article": "MOL-DRS-067",
+    "category": "Dresses",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1200&fit=crop",
+    "description": "Облегающее платье-водолазка из мягкого трикотажа. Высокий воротник обеспечивает тепло."
+  },
+  {
+    "name": "Пальто-халат светло-серое",
+    "article": "MOL-OUT-068",
+    "category": "Outerwear",
+    "price": 16990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Элегантное пальто-халат из шерсти с поясом. Современная интерпретация классики."
+  },
+  {
+    "name": "Худи oversize чёрное",
+    "article": "MOL-TOP-069",
+    "category": "Tops",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Удобное худи оверсайз с капюшоном. Идеально для расслабленных urban образов."
+  },
+  {
+    "name": "Джинсы клёш синие",
+    "article": "MOL-BTM-070",
+    "category": "Bottoms",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=1200&fit=crop",
+    "description": "Стильные джинсы клёш с высокой посадкой. Возвращение ретро-стиля в современном исполнении."
+  },
+  {
+    "name": "Блуза с воланами белая",
+    "article": "MOL-TOP-071",
+    "category": "Tops",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1624206112918-273ad5b5f165?w=800&h=1200&fit=crop",
+    "description": "Романтичная блуза с воланами на рукавах. Женственный крой создаёт нежный образ."
+  },
+  {
+    "name": "Брюки-джоггеры серые",
+    "article": "MOL-BTM-072",
+    "category": "Bottoms",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Комфортные брюки-джоггеры из мягкого трикотажа. Зауженный крой создаёт спортивный силуэт."
+  },
+  {
+    "name": "Платье-майка чёрное",
+    "article": "MOL-DRS-073",
+    "category": "Dresses",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1200&fit=crop",
+    "description": "Простое платье-майка со свободным кроем. Универсальная базовая вещь для многослойных образов."
+  },
+  {
+    "name": "Жакет твидовый бежевый",
+    "article": "MOL-OUT-074",
+    "category": "Outerwear",
+    "price": 14990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Классический твидовый жакет с функциональными карманами. Элегантный крой подчёркивает фигуру."
+  },
+  {
+    "name": "Топ бандо белый",
+    "article": "MOL-TOP-075",
+    "category": "Tops",
+    "price": 2490,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Минималистичный топ без бретелей из эластичного хлопка. Облегающий крой обеспечивает надёжную посадку."
+  },
+  {
+    "name": "Юбка трапеция коричневая",
+    "article": "MOL-BTM-076",
+    "category": "Bottoms",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Классическая юбка-трапеция из плотной костюмной ткани. Расклешённый силуэт создаёт женственный образ."
+  },
+  {
+    "name": "Платье-поло чёрное",
+    "article": "MOL-DRS-077",
+    "category": "Dresses",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1200&fit=crop",
+    "description": "Спортивное платье-поло из качественного пике. Прямой силуэт для повседневной носки."
+  },
+  {
+    "name": "Пончо вязаное серое",
+    "article": "MOL-OUT-078",
+    "category": "Outerwear",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&h=1200&fit=crop",
+    "description": "Уютное вязаное пончо из мягкой шерсти. Универсальная накидка для прохладной погоды."
+  },
+  {
+    "name": "Водолазка в рубчик бордовая",
+    "article": "MOL-TOP-079",
+    "category": "Tops",
+    "price": 3990,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&h=1200&fit=crop",
+    "description": "Водолазка из фактурного трикотажа с высоким воротником. Насыщенный цвет создаёт яркий акцент."
+  },
+  {
+    "name": "Лосины кожаные чёрные",
+    "article": "MOL-BTM-080",
+    "category": "Bottoms",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Облегающие лосины из качественной экокожи. Стрейчевая ткань обеспечивает комфорт."
+  },
+  {
+    "name": "Платье-туника бежевая",
+    "article": "MOL-DRS-081",
+    "category": "Dresses",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Свободная туника из натурального льна с накладными карманами. Идеальна для жаркой погоды."
+  },
+  {
+    "name": "Куртка-рубашка клетчатая",
+    "article": "MOL-OUT-082",
+    "category": "Outerwear",
+    "price": 8990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Стильная куртка-рубашка в клетку из плотного хлопка. Универсальная вещь для межсезонья."
+  },
+  {
+    "name": "Кроп-топ вязаный белый",
+    "article": "MOL-TOP-083",
+    "category": "Tops",
+    "price": 3490,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Укороченный вязаный топ из мягкой пряжи. Облегающий крой и фактурная вязка создают интересный образ."
+  },
+  {
+    "name": "Брюки зауженные синие",
+    "article": "MOL-BTM-084",
+    "category": "Bottoms",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1200&fit=crop",
+    "description": "Элегантные зауженные брюки из костюмной ткани со стрелками. Классический крой для офисного образа."
+  },
+  {
+    "name": "Платье-сарафан джинсовое",
+    "article": "MOL-DRS-085",
+    "category": "Dresses",
+    "price": 7490,
+    "image": "https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=800&h=1200&fit=crop",
+    "description": "Джинсовый сарафан миди с пуговицами и карманами. Универсальная модель для casual образов."
+  },
+  {
+    "name": "Кейп шерстяной серый",
+    "article": "MOL-OUT-086",
+    "category": "Outerwear",
+    "price": 11990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Элегантный кейп из мягкой шерсти со свободным кроем. Стильная альтернатива классическому пальто."
+  },
+  {
+    "name": "Майка шёлковая чёрная",
+    "article": "MOL-TOP-087",
+    "category": "Tops",
+    "price": 4490,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Роскошная майка из натурального шёлка на тонких бретелях. Изысканная база для вечерних образов."
+  },
+  {
+    "name": "Бермуды льняные бежевые",
+    "article": "MOL-BTM-088",
+    "category": "Bottoms",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&h=1200&fit=crop",
+    "description": "Комфортные бермуды из натурального льна. Дышащая ткань и удобная длина для лета."
+  },
+  {
+    "name": "Платье с запахом синее",
+    "article": "MOL-DRS-089",
+    "category": "Dresses",
+    "price": 7990,
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1200&fit=crop",
+    "description": "Женственное платье с запахом из плотного трикотажа. V-образный вырез подчёркивает шею."
+  },
+  {
+    "name": "Пуховик короткий белый",
+    "article": "MOL-OUT-090",
+    "category": "Outerwear",
+    "price": 14990,
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&h=1200&fit=crop",
+    "description": "Короткий пуховик с натуральным наполнителем. Яркий белый цвет освежает зимний гардероб."
+  },
+  {
+    "name": "Полоска базовая чёрно-белая",
+    "article": "MOL-TOP-091",
+    "category": "Tops",
+    "price": 2990,
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=1200&fit=crop",
+    "description": "Классическая футболка в бретонскую полоску. Вневременная базовая вещь гардероба."
+  },
+  {
+    "name": "Юбка солнце чёрная",
+    "article": "MOL-BTM-092",
+    "category": "Bottoms",
+    "price": 5990,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Женственная юбка солнце из плотной ткани. Расклешённый крой создаёт романтичный образ."
+  },
+  {
+    "name": "Платье-сарафан белое",
+    "article": "MOL-DRS-093",
+    "category": "Dresses",
+    "price": 6990,
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&h=1200&fit=crop",
+    "description": "Лёгкий сарафан из хлопка с регулируемыми бретелями. Идеален для жарких летних дней."
+  },
+  {
+    "name": "Тренч укороченный бежевый",
+    "article": "MOL-OUT-094",
+    "category": "Outerwear",
+    "price": 13990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Укороченный тренч с поясом и двубортной застёжкой. Современная интерпретация классики."
+  },
+  {
+    "name": "Кофта на пуговицах серая",
+    "article": "MOL-TOP-095",
+    "category": "Tops",
+    "price": 4990,
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=800&h=1200&fit=crop",
+    "description": "Классическая кофта на пуговицах из мягкого трикотажа. Универсальная вещь для базового гардероба."
+  },
+  {
+    "name": "Юбка-шорты чёрные",
+    "article": "MOL-BTM-096",
+    "category": "Bottoms",
+    "price": 5490,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Стильные юбка-шорты с высокой посадкой. Практичная модель для активного образа жизни."
+  },
+  {
+    "name": "Платье кружевное белое",
+    "article": "MOL-DRS-097",
+    "category": "Dresses",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1200&fit=crop",
+    "description": "Изящное кружевное платье миди. Романтичный образ для особых случаев и торжеств."
+  },
+  {
+    "name": "Ветровка укороченная розовая",
+    "article": "MOL-OUT-098",
+    "category": "Outerwear",
+    "price": 9990,
+    "image": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=1200&fit=crop",
+    "description": "Лёгкая укороченная ветровка из водоотталкивающей ткани. Свежий розовый цвет добавляет настроения."
+  },
+  {
+    "name": "Топ сетка чёрный",
+    "article": "MOL-TOP-099",
+    "category": "Tops",
+    "price": 2990,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&h=1200&fit=crop",
+    "description": "Эффектный топ из сетки для многослойных образов. Добавляет дерзости любому луку."
+  },
+  {
+    "name": "Юбка плиссе бежевая",
+    "article": "MOL-BTM-100",
+    "category": "Bottoms",
+    "price": 6490,
+    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=800&h=1200&fit=crop",
+    "description": "Элегантная плиссированная юбка миди. Универсальная длина и нейтральный оттенок для любого образа."
+  }
+]

@@ -1,0 +1,12 @@
+When updating the MOLOVE project
+- Always use React.memo for components that receive props
+- Use React.useCallback for event handlers passed as props
+- Implement lazy loading for images with loading="lazy"
+- Use pagination for product lists (default 20 items, load more button)
+- Cache optimized image URLs to avoid recalculation
+- Use defer attribute for non-critical scripts
+- Add preconnect hints for external resources
+- Minimize animation delays (max 20 items * 50ms)
+- Keep component files under 80 lines
+- Use content-visibility for images
+- Monitor performance with performanceMonitor utility
