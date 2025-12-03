@@ -78,7 +78,7 @@ function ContactsApp() {
                 <h3 className="text-xl font-light mb-3 tracking-wide" style={{fontFamily: 'Cormorant Garamond, serif'}}>
                   Телефон
                 </h3>
-                <a href="tel:+79000000000" className="text-lg text-gray-600 hover:text-black transition-colors">
+                <a href="tel:+790777777" className="text-lg text-gray-600 hover:text-black transition-colors">
                   +7 (900) 000-00-00
                 </a>
               </div>
